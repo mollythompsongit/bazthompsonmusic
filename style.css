@@ -1,0 +1,645 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Anybody', cursive;
+    overflow-x: hidden;
+  }
+  
+  
+  /* HERO SECTION */
+  
+  .hero-icon-container {
+    width: 0px;
+    height: 0px;
+  }
+  
+  #hero-section {
+    width: 100%;
+    height: 220px;
+    background-image: url("../img/heroimage2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+  }
+  
+  #nav-content {
+    width: 100%;
+    text-align: right;
+    margin-top: -1%;
+    display: flex;
+  }
+  
+  .hero-title-1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 3px black;
+    width: 93%;
+  }
+  
+  #modal-button {
+    width: 7%;
+    padding: 8px;
+    visibility: visible;
+  }
+  
+  .hamburger-icon {
+    width: 20px;
+    height: 2px;
+    background-color: #e5e5e5;
+    margin: 6px 0;
+  }
+  
+  .bi-list {
+    padding-left: 10px;
+  }
+  
+  .music-title-container {
+    width: 20%;
+    text-align: right;
+    position: absolute;
+    margin-top: 0%;
+    -webkit-transform: rotate(-270deg);
+    right: -13px;
+  }
+  
+  .hero-title-2 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 3px black;
+  }
+  
+  /* MODAL SECTION  */
+  #modal-popup {
+    z-index: 99;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    top: 0px;
+    right: 0px;
+    box-shadow: 0px 6px 18px 3px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 0px 6px 18px 3px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 0px 6px 18px 3px rgba(0, 0, 0, 0.58);
+  }
+  
+  #modal-popup.open {
+    display: block;
+    position: fixed;
+  }
+  
+  .hamburger-menu-links-list {
+    list-style: none;
+  }
+  
+  li {
+    font-family: 'Rock Salt', cursive !important;
+    padding-top: 50px;
+    text-shadow: 1px 2px black;
+  }
+  
+  a li {
+    color: white;
+  }
+  
+  .bi-x {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 45px;
+    transition: 0.3s ease;
+    color: #e5e5e5;
+  }
+  
+  #close-button {
+    cursor: pointer;
+  }
+  
+  .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+  }
+  
+  /* BIO SECTION  */
+  .bio-section-container {
+    width: 100vw;
+    height: auto;
+    background-color: #eeeeee;
+    padding-top: 7%;
+    padding-bottom: 1%;
+  }
+  
+  .bio-section-title {
+    font-family: 'Rock Salt', cursive !important;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    padding-bottom: 5%;
+    padding-left: 7%;
+    text-shadow: 2px 2px white;
+  }
+  
+  .bio-section-body {
+    color: black;
+    font-size: 16px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 7%;
+    letter-spacing: 0.05em;
+    line-height: 1.3em;
+  }
+  
+  /* CARD SECTION */
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .album-heading {
+    font-family: 'Rock Salt', cursive !important;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    padding-bottom: 5%;
+    padding-left: 7%;
+    text-shadow: 2px 2px black;
+  }
+  
+  .card-container {
+    width: 100vw;
+    height: auto;
+    background: rgb(238, 238, 238);
+    background: radial-gradient(circle, rgba(238, 238, 238, 1) 0%, rgba(103, 103, 103, 1) 80%);
+    padding-top: 7%;
+    padding-bottom: 1%;
+  }
+  
+  .responsive-card-container {
+    background-color: transparent;
+  }
+  
+  .card {
+    height: 132px;
+    width: 90%;
+    background-color: black;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 7px 9px #EDEDED;
+    margin: 0 auto;
+    margin-bottom: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  
+  .card-body {
+    width: 100%;
+    height: 135px;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .album-image-box {
+    width: 45%;
+    height: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 110px;
+  }
+  
+  .card-text-button-box {
+    width: 55%;
+    height: 110px;
+    margin: 10px;
+    overflow-y: hidden;
+  }
+  
+  .card-button {
+    width: 100%;
+    height: 25px;
+    background-color: #303030;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 9px;
+  }
+  
+  i {
+    margin-left: 2px;
+  }
+  
+  .button-text {
+    font-size: 12px;
+    color: white;
+    padding-top: 5px;
+    height: 20px;
+  }
+  
+  
+  
+  /* Video Section */
+  
+  .video-container {
+    width: 100%;
+    height: auto;
+    background-color: #eeeeee;
+  }
+  
+  .music-video-heading {
+    font-family: 'Rock Salt', cursive !important;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 7%;
+    text-shadow: 2px 2px white;
+  }
+  
+  .container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* FOOTER SECTION  */
+  
+  .footer-container {
+    width: 100vw;
+    height: 3vh;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 10px;
+    background: #636363;
+    padding-bottom: 10px;
+  }
+  
+  
+  /* MOBILE MEDIUM  --------------------------------------------------------------------- */
+  @media only screen and (min-width: 375px) {
+    .card {
+      height: 148px;
+    }
+  
+    .album-image-box {
+      height: 132px;
+    }
+  
+    .card-img-top {
+      height: 128px;
+      width: 95%;
+    }
+  
+    .card-button {
+      height: 27px;
+      margin-top: 11px;
+    }
+  
+    .card-text-button-box {
+      height: 127px;
+    }
+  
+    .button-text {
+      padding-top: 7px;
+    }
+  }
+  
+  /* IPHONE 12 PRO  --------------------------------------------------------------------- */
+  @media only screen and (min-width: 390px) {
+    .album-image-box {
+      width: 40%;
+    }
+  
+    .card-img-top {
+      width: 92%;
+    }
+  
+    .card-button {
+      width: 95%;
+    }
+  }
+  
+  /* TABLET  --------------------------------------------------------------------- */
+  @media only screen and (min-width: 768px) {
+  
+    .hero-icon-container {
+      width: 97%;
+      height: 51px;
+      font-size: 30px;
+      color: white;
+      text-align: right;
+      margin-top: 33%;
+    }
+  
+  
+    #hero-icon {
+      color: white;
+      padding-right: 8px;
+    }
+  
+    #hero-section {
+      height: 390px;
+    }
+  
+    #nav-content {
+      margin-top: 0%;
+    }
+  
+    #modal-button {
+      visibility: hidden;
+      width: 0px;
+      height: 0px;
+    }
+  
+    .hamburger-icon {
+      width: 0px;
+      height: 0px;
+    }
+  
+    .hero-title-1 {
+      font-size: 35px;
+      width: 96%;
+    }
+  
+    .music-title-container {
+      margin-top: -1%;
+      right: -36px;
+    }
+  
+    .hero-title-2 {
+      font-size: 35px;
+    }
+  
+    .bio-section-title {
+      font-size: 30px;
+      padding-bottom: 3%;
+    }
+  
+    .bio-section-body {
+      font-size: 20px;
+      line-height: 1.4em;
+    }
+  
+    .album-heading {
+      font-size: 30px;
+      padding-bottom: 3%;
+    }
+  
+    .responsive-card-container {
+      background-color: transparent;
+      width: 95%;
+      height: auto;
+      display: flex;
+      margin: 0 auto;
+    }
+  
+    .card {
+      height: 350px;
+      width: 28%;
+      margin-bottom: 5%;
+      /* display: flex;
+      flex-wrap: wrap; */
+      overflow: hidden;
+    }
+  
+    .card-body {
+      display: contents;
+    }
+  
+    .album-image-box {
+      width: 95%;
+      margin: 0 auto;
+      padding: 15px;
+      padding-top: 15px;
+      padding-bottom: 5px;
+      height: 170px;
+    }
+  
+    .card-img-top {
+      width: 100%;
+      height: 165px;
+    }
+  
+    .card-text-button-box {
+      width: 95%;
+      margin: 0 auto;
+      padding: 15px;
+      padding-top: 0px;
+      height: 140px;
+    }
+  
+    .card-button {
+      width: 100%;
+      height: 30px;
+      margin-top: 15px;
+    }
+  
+    .button-text {
+      font-size: 15px;
+    }
+  
+    .button-text {
+      font-size: 15px;
+    }
+  
+    .music-video-heading {
+      font-size: 30px;
+      padding-bottom: 3%;
+    }
+  
+    .footer-container {
+      height: 2vh;
+      padding-top: 15px;
+    }
+  
+  }
+  
+  /* LAPTOP SMALL  --------------------------------------------------------------------- */
+  @media only screen and (min-width: 1024px) {
+    #hero-section {
+      height: 520px;
+    }
+  
+    .hero-title-1 {
+      font-size: 40px;
+    }
+  
+    .music-title-container {
+      margin-top: -2%;
+      right: -50px;
+    }
+  
+    .hero-title-2 {
+      font-size: 40px;
+    }
+  
+    .hero-icon-container {
+      height: 51px;
+      font-size: 40px;
+      margin-top: 35%;
+    }
+  
+    #hero-icon {
+      padding-right: 12px;
+    }
+  
+    #hero-icon:hover {
+      cursor: pointer;
+      color: rgb(77, 156, 225);
+    }
+  
+    .bio-section-container {
+      padding-top: 3%;
+    }
+  
+    .bio-section-body {
+      font-size: 22px;
+      line-height: 1.6em;
+    }
+  
+    .card {
+      height: 450px;
+    }
+  
+    .album-image-box {
+      height: 240px;
+      padding-top: 20px;
+      padding-bottom: 0px;
+    }
+  
+    .card-img-top {
+      height: 235px;
+    }
+  
+    .card-button {
+      width: 100%;
+      height: 35px;
+      margin-top: 15px;
+    }
+  
+    .card-button:hover {
+      cursor: pointer;
+      background-color: rgb(237, 237, 237);
+    }
+  
+    .button-text:hover {
+      color: black;
+    }
+  
+    .button-text {
+      font-size: 17px;
+    }
+  
+    .video-box {
+      width: 75%;
+      height: 470px;
+      margin: 0 auto;
+    }
+  
+  }
+  
+  /* LAPTOP LARGE  --------------------------------------------------------------------- */
+  @media only screen and (min-width: 1440px) {
+    #hero-section {
+      background-position: center;
+      height: 600px;
+    }
+  
+    .hero-title-1 {
+      font-size: 50px;
+    }
+  
+    .music-title-container {
+      margin-top: -3%;
+      right: -70px;
+    }
+  
+    .hero-title-2 {
+      font-size: 50px;
+    }
+  
+    .hero-icon-container {
+      height: 52px;
+      font-size: 45px;
+      margin-top: 29%;
+    }
+  
+    .bio-section-title {
+      font-size: 38px;
+      padding-bottom: 2%;
+      padding-left: 6%;
+    }
+  
+    .bio-section-body {
+      font-size: 20px;
+      padding-left: 6%;
+      padding-right: 6%;
+      padding-bottom: 4%;
+    }
+  
+    .album-heading {
+      font-size: 38px;
+      padding-bottom: 2%;
+      padding-left: 6%;
+    }
+  
+    .responsive-card-container {
+      width: 90%;
+    }
+  
+    .card {
+      height: 490px;
+      width: 25%;
+    }
+  
+    .album-image-box {
+      height: 270px;
+    }
+  
+    .card-img-top {
+      height: 265px;
+    }
+  
+    .card-text-button-box {
+      width: 75%;
+    }
+  
+    .music-video-heading {
+      font-size: 38px;
+      padding-bottom: 2%;
+      padding-left: 6%;
+    }
+  
+    .video-box {
+      width: 70%;
+      height: 620px;
+      margin: 0 auto;
+    }
+  }
